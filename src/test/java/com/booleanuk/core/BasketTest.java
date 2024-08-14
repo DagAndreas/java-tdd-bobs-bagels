@@ -40,7 +40,6 @@ class BasketTest {
     }
 
 
-
     @Test
     void testGetMaxSize(){
         Basket basket = new Basket();
@@ -63,7 +62,5 @@ class BasketTest {
         Assertions.assertNotEquals(basket.getMaxSize(), 10);
         Assertions.assertNotEquals(basket.getMaxSize(), 15);
         Assertions.assertEquals(basket.getMaxSize(), 3);
-
-
     }
 }
