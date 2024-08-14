@@ -8,12 +8,12 @@ class BasketTest {
     @Test
     void testAddBagel(){
         Basket basket = new Basket();
-        Assertions.assertTrue(basket.addBagel("Whole wheat"));
-        Assertions.assertTrue(basket.addBagel("Whole wheat"));
-        Assertions.assertTrue(basket.addBagel("Whole wheat"));
-        Assertions.assertTrue(basket.addBagel("Whole wheat"));
-        Assertions.assertTrue(basket.addBagel("Whole wheat"));
+
+        // max size = 5;
+        for (int i = 0; i < 5; i++)
+            Assertions.assertTrue(basket.addBagel("Whole wheat"));
         Assertions.assertFalse(basket.addBagel("Whole wheat"));
+
     }
 
     @Test
