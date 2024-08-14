@@ -54,5 +54,16 @@ class BasketTest {
 
         basket.setMaxSize(10);
         Assertions.assertEquals(basket.getMaxSize(), 10);
+
+        basket.setMaxSize(15);
+        Assertions.assertNotEquals(basket.getMaxSize(), 10);
+        Assertions.assertEquals(basket.getMaxSize(), 15);
+
+        basket.setMaxSize(3);
+        Assertions.assertNotEquals(basket.getMaxSize(), 10);
+        Assertions.assertNotEquals(basket.getMaxSize(), 15);
+        Assertions.assertEquals(basket.getMaxSize(), 3);
+
+
     }
 }
