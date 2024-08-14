@@ -15,5 +15,10 @@ class BasketTest {
     void testAddBagel(){
         Basket basket = new Basket();
         Assertions.assertTrue(basket.addBagel("Whole wheat"));
+        Assertions.assertTrue(basket.addBagel("Whole wheat"));
+        Assertions.assertTrue(basket.addBagel("Whole wheat"));
+        Assertions.assertTrue(basket.addBagel("Whole wheat"));
+        Assertions.assertTrue(basket.addBagel("Whole wheat"));
+        Assertions.assertFalse(basket.addBagel("Whole wheat"));
     }
 }
