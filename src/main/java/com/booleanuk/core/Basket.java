@@ -30,6 +30,14 @@ public class Basket {
         return false;
     }
 
+    /**
+     * Removes the last bagel
+     * @return boolean
+     */
+    public boolean removeBagel(){
+        return true;
+    }
+
     public int getMaxSize(){
         return maxBasketSize;
     }
