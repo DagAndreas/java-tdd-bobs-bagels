@@ -36,4 +36,13 @@ class BasketTest {
         Basket basket = new Basket();
         Assertions.assertEquals(basket.getMaxSize(), 5);
     }
+
+    @Test
+    void testSetMaxSize(){
+        Basket basket = new Basket();
+        Assertions.assertEquals(basket.getMaxSize(), 5);
+
+        basket.setMaxSize(10);
+        Assertions.assertEquals(basket.getMaxSize(), 10);
+    }
 }

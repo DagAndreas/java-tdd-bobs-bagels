@@ -32,7 +32,11 @@ public class Basket {
     }
 
     public int getMaxSize(){
-        return 0;
+        return maxBasketSize;
+    }
+
+    public void setMaxSize(int newSize){
+        maxBasketSize = newSize;
     }
 
 }
