@@ -28,6 +28,6 @@ class BasketTest {
         basket.addBagel("Italian");
         Assertions.assertTrue(basket.removeBagel("Italian"));
         Assertions.assertFalse(basket.removeBagel("Whole wheat"));
-
+        Assertions.assertFalse(basket.removeBagel("Italian"));
     }
 }

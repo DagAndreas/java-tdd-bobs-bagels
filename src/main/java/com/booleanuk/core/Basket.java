@@ -17,7 +17,18 @@ public class Basket {
     }
 
     public boolean removeBagel(String type){
-        return true;
+        if(basket.contains(type)){
+            basket.remove(type);
+            return true;
+        }
+
+        if(basket.isEmpty()) {
+            System.out.println("Basket is empty.");
+        }
+        else {
+            System.out.println(type + " is not in basket.");
+        }
+        return false;
     }
 
 }
