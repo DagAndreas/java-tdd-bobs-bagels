@@ -30,4 +30,10 @@ class BasketTest {
         Assertions.assertFalse(basket.removeBagel("Whole wheat"));
         Assertions.assertFalse(basket.removeBagel("Italian"));
     }
+
+    @Test
+    void testGetMaxSize(){
+        Basket basket = new Basket();
+        Assertions.assertEquals(basket.getMaxSize(), 5);
+    }
 }

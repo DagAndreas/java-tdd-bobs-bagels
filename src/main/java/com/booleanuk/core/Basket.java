@@ -31,4 +31,8 @@ public class Basket {
         return false;
     }
 
+    public int getMaxSize(){
+        return 0;
+    }
+
 }
