@@ -17,13 +17,23 @@ class BasketTest {
     }
 
     @Test
-    void testRemoveBagel(){
+    void testRemoveBagel() {
         Basket basket = new Basket();
         basket.addBagel("Italian");
         Assertions.assertTrue(basket.removeBagel("Italian"));
         Assertions.assertFalse(basket.removeBagel("Whole wheat"));
         Assertions.assertFalse(basket.removeBagel("Italian"));
     }
+
+
+    @Test
+    void testRemoveBagelOverloaded(){
+        Basket basket = new Basket();
+        basket.addBagel("Italian");
+        Assertions.assertTrue(basket.removeBagel());
+    }
+
+
 
     @Test
     void testGetMaxSize(){
