@@ -35,7 +35,13 @@ public class Basket {
      * @return boolean
      */
     public boolean removeBagel(){
+        if(basket.isEmpty()){
+            System.out.println("Basket is empty.");
+            return false;
+        }
+        basket.removeLast();
         return true;
+
     }
 
     public int getMaxSize(){

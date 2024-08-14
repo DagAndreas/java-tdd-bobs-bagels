@@ -31,6 +31,12 @@ class BasketTest {
         Basket basket = new Basket();
         basket.addBagel("Italian");
         Assertions.assertTrue(basket.removeBagel());
+        Assertions.assertFalse(basket.removeBagel());
+
+        basket.addBagel("a round one");
+        Assertions.assertTrue(basket.removeBagel());
+        Assertions.assertFalse(basket.removeBagel());
+        Assertions.assertFalse(basket.removeBagel());
     }
 
 
