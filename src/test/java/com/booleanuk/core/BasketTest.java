@@ -21,4 +21,13 @@ class BasketTest {
         Assertions.assertTrue(basket.addBagel("Whole wheat"));
         Assertions.assertFalse(basket.addBagel("Whole wheat"));
     }
+
+    @Test
+    void testRemoveBagel(){
+        Basket basket = new Basket();
+        basket.addBagel("Italian");
+        Assertions.assertTrue(basket.removeBagel("Italian"));
+        Assertions.assertFalse(basket.removeBagel("Whole wheat"));
+
+    }
 }
