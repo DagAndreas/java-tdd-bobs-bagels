@@ -8,7 +8,12 @@ public class Basket {
     private ArrayList<String> basket = new ArrayList<>();
 
     public boolean addBagel(String type){
-        return true;
+        if (basket.size() < maxBasketSize){
+            basket.add(type);
+            return true;
+        }
+        System.out.println("Basket is full. Can't add " + type);
+        return false;
     }
 
 }
